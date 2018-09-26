@@ -1,0 +1,13 @@
+{% extends 'music/base.html' %}
+{% block content %}  
+  
+  
+  <h1> Task  <span  style="display:inline-block; width:120px;"></span>  Status <span style="display:inline-block; width:90px;"></span>  Maximum Days   </h1>
+  <form  class="form" action=""  method="post">
+  	{% csrf_token %}
+  	{% include 'music/form-template.html' %}
+  	<button type="submit">submit</button> 
+  </form>
+{% endblock %}
+	
+	

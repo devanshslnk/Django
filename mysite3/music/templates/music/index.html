@@ -1,0 +1,13 @@
+{% extends 'music/base.html' %}
+{% block content %}
+<h1>Todo-list</h1>
+<ul>
+	{% for a in  object_list %}
+		<li><a href="{% url 'details' a.id %}">{{a.arstist}}</a></li>
+	{% endfor %}
+</ul>
+<a href="{% url 'album-add' %}">ADD TASK</a>
+
+{% endblock %}
+
+

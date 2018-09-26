@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<meta charset="utf-8" />
+	
+	
+	<title>
+		web1
+	</title>
+</head>
+<body>
+  <h1>Todo -list</h1>
+  
+  	
+  <h1>Task</h1>
+  <h2>{{album.arstist}}</h2>
+  <br>
+  <br>
+  <h1>Status</h1>
+  <h2>{{album.album_name}}</h2>
+  <br>
+  <br>
+  <h1>Number of days</h1>
+  <h2>{{ album_code }}</h2>
+  {% for item in album.song_set.all %}
+  		<li>{{item.song_title}}</li>
+
+  {% endfor %}
+  	
+  
+
+
+	
+	
+   
+
+
+</body>
+</html>
+
